@@ -1,0 +1,209 @@
+:root{
+    /*color*/
+    --white-color:#fff;
+    --black-color:#140a00;
+    --blue-color:#045fd4;
+    --red-color:#ff0000;
+    --grey-dark-color: #939e96;
+
+
+    /*size*/
+    --padding: 12px;
+    /*font -size*/
+
+    --font-large: 20px;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:  border-box;
+}
+body{
+    font-family: Roboto;;
+}
+
+
+ul{
+    list-style: none;
+}
+
+button,
+button:focus{
+    border: none;
+    cursor: pointer; 
+    
+    background-color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding);
+    background-color: var(--black-color);
+    color:var(--white-color);
+}
+
+header .logo{
+    font-size:var(--font-large);
+    
+}
+
+header .logo i{
+    color:var(--red-color);
+}
+
+header .icons .fa-search {
+    margin-right: var(--padding);
+}
+
+.player video{
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    max-height: 500px;
+}
+.player {
+    text-align: center;
+    background-color: black;
+    /* position:sticky; */
+    /* top:0; */
+}
+
+.info {
+  padding: var(--padding);
+
+}
+
+.info .metadata .hashtags{
+    display: flex;
+    font-size: 10px;
+    color: var(--blue-color);
+}
+
+
+.info .metadata .hashtags li{
+    margin-right:var(--padding);
+}
+
+.info .metadata .titleAndButton{
+    display:flex;
+}
+
+.info .metadata .titleAndButton .title{
+    font-size: var(--font-medium);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin-right: var(--padding);
+}
+
+.info .metadata .titleAndButton .moreBtn{
+    height: 100%;
+}
+
+.info .views{
+    font-size: 10px;
+    color: var(--grey-dark-color);
+}
+
+
+.actions{
+    display: flex;
+    justify-content: space-around;
+    margin: var(--padding) 0;
+}
+
+.actions button{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    color: var(--grey-dark-color);
+}
+
+.actions button i {
+    margin: 0 auto;
+    margin-bottom: calc(var(--padding)/2);
+    font-size: 16px;
+    
+}
+
+.actions.button i.active{
+    color: var(--blue-color)
+}
+
+.channel{
+    display: flex;
+    justify-content: space-between;
+    border-top : 1px solid var(--grey-dark-color);
+    border-bottom : 1px solid var(--grey-dark-color);
+}
+
+.channel .metadata{
+    display: flex;
+    align-items: center;
+}
+.channel .metadata .info{
+    display: flex;
+    flex-direction: column;
+}
+
+.channel .metadata .info .name{
+    font-size: 15px;
+}
+
+.channel .metadata .info .subscribers{
+    font-size: 12px;
+}
+.channel .metadata img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.channel .subscribe{
+    text-transform: uppercase;
+    color: var(--red-color);
+}
+
+
+
+/* upnext */
+
+.upNext{
+    padding: 0 var(--padding);
+}
+
+.upNext > .title {
+    font-size: 15px;
+    color: var(--grey-dark-color);
+    margin-bottom: calc(var(--padding) /2);
+}
+
+.upNext .item{
+    display: flex;
+}
+
+.upNext .item .img{
+    flex : 1 1 35%;
+}
+.upNext .item .img img{
+    width: 100%
+}
+
+.upNext .item .info {
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.upNext .item .moreBtn{
+    flex: 1 1 5%;
+}
+
+.upNext .item .info .name,
+.upNext .item .info .views{
+    font-size: 15px;
+    color: var(--grey-dark-color);
+}
